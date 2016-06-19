@@ -131,3 +131,6 @@ Following an OS X upgrade it may be necessary to reinstall the Xcode Command Lin
 xcode-select --install
 brew upgrade
 ```
+### Using macOS Sierra Beta
+
+Using macOS Sierra Beta may cause many issues with some formulas, mainly those that use clang to build. Installing the Xcode-beta app, with the SDKs for macOS Sierra, then running `sudo xcode-select -switch /Applications/Xcode-beta.app/Contents/Developer/`, will fix these issues.
